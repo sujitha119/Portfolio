@@ -1,620 +1,316 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sujitha | Portfolio</title>
+    <title>Sujitha</title> | Creative Developer</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
-    <header>
+    <!-- NAVBAR -->
+    <header class="header">
         <nav class="navbar">
+            <a href="#home" class="logo">✿ My<span>Portfolio</span></a>
 
-            <div class="logo">
-                Portfolio
-            </div>
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#internship">Internship</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-
+            <button id="themeBtn" class="theme-btn"
+                aria-label="Toggle dark mode">☾</button>
         </nav>
     </header>
 
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="eyebrow">HELLO, I'M</p>
 
-    <!-- ================= HOME ================= -->
+            <h1>V.S <span>Sujitha</span></h1>
 
-    <section id="home" class="home">
+            <h2>Web Developer &amp; Creative Thinker</h2>
 
-        <div class="home-content">
-
-            <p class="hello">Hello, I'm</p>
-
-            <h1>Your Name</h1>
-
-            <h2>B.Sc Information Technology Student</h2>
-
-            <p>
-                Passionate about technology, programming and creating
-                innovative digital solutions.
+            <p class="description">
+                I'm a passionate IT student who loves building beautiful
+                websites, exploring new technologies, and turning ideas
+                into real projects.
             </p>
 
-            <div class="home-buttons">
-
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
-
-                <a href="resume.pdf" class="btn second-btn" download>
-                    Download Resume
-                </a>
-
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View My Projects →</a>
+                <a href="#contact" class="btn outline">Contact Me</a>
             </div>
 
-            <div class="social-icons">
-
-                <a href="https://github.com/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:yourmail@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
+            <div class="socials">
+                <a href="https://github.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                <a href="https://linkedin.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+                <a href="https://instagram.com/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">◎</a>
+                <a href="mailto:yourname@gmail.com" aria-label="Email">✉</a>
             </div>
-
         </div>
 
+        <div class="hero-image">
+            <div class="blob blob-one"></div>
+            <div class="blob blob-two"></div>
 
-        <div class="profile-container">
-
-            <div class="profile-circle">
-
-                <img src="images/profile.jpg"
-                     alt="Profile Photo">
-
+            <div class="photo-frame">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85"
+                     alt="Profile portrait">
             </div>
 
+            <div class="floating-note">
+                <span>✦</span>
+                <div>
+                    <strong>Creative Mind</strong>
+                    <p>Always learning!</p>
+                </div>
+            </div>
         </div>
-
     </section>
 
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div class="section-title">
+            <p class="eyebrow">ABOUT ME</p>
+            <h2>Sujitha<span>I?</span></h2>
+        </div>
 
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about" class="section">
-
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-container">
-
-            <div class="about-image">
-
-                <img src="images/profile.jpg"
-                     alt="Profile">
-
-            </div>
-
-            <div class="about-text">
-
-                <h3>I'm a B.Sc IT Student</h3>
+        <div class="about-layout">
+            <div class="about-content">
+                <h3>Curious by nature, creative by choice.</h3>
 
                 <p>
-                    I am a passionate and motivated Information Technology
-                    student interested in software development, web
-                    technologies and emerging technologies.
+                    I am a B.Sc. Information Technology student with a strong
+                    interest in web development, programming, and technology.
+                    I enjoy learning new skills, solving problems, and
+                    creating projects that make a difference.
                 </p>
 
-                <p>
-                    I enjoy learning new technologies and applying my
-                    knowledge through real-world projects.
-                </p>
-
-                <div class="about-details">
-
-                    <p>
-                        <strong>Name:</strong> Your Name
-                    </p>
-
-                    <p>
-                        <strong>Degree:</strong> B.Sc Information Technology
-                    </p>
-
-                    <p>
-                        <strong>Location:</strong> Tamil Nadu, India
-                    </p>
-
-                    <p>
-                        <strong>Email:</strong> yourmail@gmail.com
-                    </p>
-
-                </div>
-
+                <a href="#contact" class="btn outline">Let's Connect →</a>
             </div>
 
-        </div>
+            <div class="qualities">
+                <article class="quality-card">
+                    <span class="quality-icon purple">♙</span>
+                    <div>
+                        <h3>Quick Learner</h3>
+                        <p>I enjoy discovering and learning new things.</p>
+                    </div>
+                </article>
 
+                <article class="quality-card">
+                    <span class="quality-icon pink">♧</span>
+                    <div>
+                        <h3>Problem Solver</h3>
+                        <p>I enjoy finding simple solutions to problems.</p>
+                    </div>
+                </article>
+
+                <article class="quality-card">
+                    <span class="quality-icon blue">♡</span>
+                    <div>
+                        <h3>Team Player</h3>
+                        <p>I value teamwork and collaboration.</p>
+                    </div>
+                </article>
+
+                <article class="quality-card">
+                    <span class="quality-icon green">☆</span>
+                    <div>
+                        <h3>Creative Thinker</h3>
+                        <p>I turn ideas into useful digital experiences.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section id="education" class="section light-section">
-
-        <h2 class="section-title">Education</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2023 - 2026</span>
-
-                    <h3>B.Sc Information Technology</h3>
-
-                    <h4>Your College Name</h4>
-
-                    <p>
-                        Bachelor of Science in Information Technology.
-                        Studied programming, database management,
-                        networking and software development.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2021 - 2023</span>
-
-                    <h3>Higher Secondary Education</h3>
-
-                    <h4>Your School Name</h4>
-
-                    <p>
-                        Completed higher secondary education with
-                        interest in computer science and technology.
-                    </p>
-
-                </div>
-
-            </div>
-
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+        <div class="section-title">
+            <p class="eyebrow">MY SKILLS</p>
+            <h2>What I Work <span>With</span></h2>
+            <p>Technologies and tools I'm learning and using.</p>
         </div>
 
-    </section>
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills" class="section">
-
-        <h2 class="section-title">Technical Skills</h2>
-
-        <div class="skills-container">
-
+        <div class="skills-grid">
             <div class="skill-card">
-
-                <i class="fab fa-java"></i>
-
-                <h3>Java</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:80%">
-                        80%
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fab fa-python"></i>
-
-                <h3>Python</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:85%">
-                        85%
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fab fa-html5"></i>
-
+                <span class="skill-symbol html">5</span>
                 <h3>HTML</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:90%">
-                        90%
-                    </div>
-                </div>
-
+                <p>● ● ● ● ○</p>
             </div>
 
-
             <div class="skill-card">
-
-                <i class="fab fa-css3-alt"></i>
-
+                <span class="skill-symbol css">3</span>
                 <h3>CSS</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:85%">
-                        85%
-                    </div>
-                </div>
-
+                <p>● ● ● ○ ○</p>
             </div>
 
-
             <div class="skill-card">
-
-                <i class="fab fa-js"></i>
-
+                <span class="skill-symbol js">JS</span>
                 <h3>JavaScript</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:75%">
-                        75%
-                    </div>
-                </div>
-
+                <p>● ● ● ○ ○</p>
             </div>
-
 
             <div class="skill-card">
-
-                <i class="fas fa-database"></i>
-
-                <h3>SQL</h3>
-
-                <div class="progress">
-                    <div class="progress-bar" style="width:80%">
-                        80%
-                    </div>
-                </div>
-
+                <span class="skill-symbol python">Py</span>
+                <h3>Python</h3>
+                <p>● ● ● ○ ○</p>
             </div>
 
-        </div>
+            <div class="skill-card">
+                <span class="skill-symbol mysql">⌘</span>
+                <h3>MySQL</h3>
+                <p>● ● ● ● ○</p>
+            </div>
 
+            <div class="skill-card">
+                <span class="skill-symbol git">◆</span>
+                <h3>Git</h3>
+                <p>● ● ● ○ ○</p>
+            </div>
+        </div>
     </section>
 
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects" class="section light-section">
-
-        <h2 class="section-title">My Projects</h2>
-
-        <div class="project-container">
-
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-
-                <h3>Online Shopping Website</h3>
-
-                <p>
-                    A responsive e-commerce website developed using
-                    HTML, CSS and JavaScript.
-                </p>
-
-                <div class="project-tech">
-                    HTML • CSS • JavaScript
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-brain"></i>
-                </div>
-
-                <h3>Machine Learning Project</h3>
-
-                <p>
-                    A machine learning project designed to analyze
-                    data and generate useful predictions.
-                </p>
-
-                <div class="project-tech">
-                    Python • ML • Pandas
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-
-                <h3>Student Management System</h3>
-
-                <p>
-                    A simple system for managing student records,
-                    courses and academic information.
-                </p>
-
-                <div class="project-tech">
-                    Java • MySQL
-                </div>
-
-                <a href="#" class="project-btn">
-                    View Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= INTERNSHIP ================= -->
-
-    <section id="internship" class="section">
-
-        <h2 class="section-title">Internship</h2>
-
-        <div class="internship-card">
-
-            <div class="internship-icon">
-
-                <i class="fas fa-briefcase"></i>
-
-            </div>
-
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+        <div class="section-title project-heading">
             <div>
-
-                <h3>Software Development Intern</h3>
-
-                <h4>Your Company Name</h4>
-
-                <span class="date">
-                    May 2026 - June 2026
-                </span>
-
-                <p>
-                    Worked on web development and software-related
-                    tasks. Gained practical experience in HTML,
-                    CSS, JavaScript and modern development tools.
-                </p>
-
+                <p class="eyebrow">MY PROJECTS</p>
+                <h2>Featured <span>Projects</span></h2>
+                <p>Some projects from my learning journey.</p>
             </div>
-
         </div>
 
+        <div class="projects-grid">
+            <article class="project-card">
+                <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=700&q=80"
+                    alt="Electronic devices">
+                <div class="project-info">
+                    <h3>Electrical Shop Website</h3>
+                    <p>A website for browsing electrical products and services.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://soorya2628.github.io/Project/"
+                       target="_blank" rel="noopener noreferrer">View Project ↗</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+                    alt="Website displayed on a screen">
+                <div class="project-info">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive website showcasing skills and achievements.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>Design</span>
+                    </div>
+                    <a href="#home">View Portfolio ↗</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                    alt="Data analytics dashboard">
+                <div class="project-info">
+                    <h3>QR Attendance System</h3>
+                    <p>A student project concept for QR-based attendance.</p>
+                    <div class="tags">
+                        <span>Python</span><span>Database</span>
+                    </div>
+                    <a href="#contact">Discuss Project ↗</a>
+                </div>
+            </article>
+        </div>
     </section>
 
-
-    <!-- ================= CERTIFICATIONS ================= -->
-
-    <section class="section light-section">
-
-        <h2 class="section-title">
-            Certifications & Achievements
-        </h2>
-
-        <div class="certificate-container">
-
-            <div class="certificate-card">
-
-                <i class="fas fa-certificate"></i>
-
-                <h3>Python Programming</h3>
-
-                <p>
-                    Completed Python programming certification.
-                </p>
-
-            </div>
-
-
-            <div class="certificate-card">
-
-                <i class="fas fa-award"></i>
-
-                <h3>Web Development</h3>
-
-                <p>
-                    Completed web development training.
-                </p>
-
-            </div>
-
-
-            <div class="certificate-card">
-
-                <i class="fas fa-trophy"></i>
-
-                <h3>Project Expo</h3>
-
-                <p>
-                    Participated in college project exhibition.
-                </p>
-
-            </div>
-
+    <!-- EDUCATION -->
+    <section class="section education" id="education">
+        <div class="section-title">
+            <p class="eyebrow">MY EDUCATION</p>
+            <h2>Education &amp; <span>Learning</span></h2>
         </div>
 
+        <div class="education-list">
+            <article class="education-card">
+                <span class="education-icon">🎓</span>
+                <div>
+                    <p class="eyebrow">2023 – 2026</p>
+                    <h3>B.Sc. Information Technology</h3>
+                    <p>Learning programming, databases, networking, and web technologies.</p>
+                </div>
+            </article>
+
+            <article class="education-card">
+                <span class="education-icon">📚</span>
+                <div>
+                    <p class="eyebrow">HIGHER SECONDARY</p>
+                    <h3>Higher Secondary Education</h3>
+                    <p>Building a foundation for further studies in technology.</p>
+                </div>
+            </article>
+        </div>
     </section>
 
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <div class="section-title">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Contact <span>Me</span></h2>
+            <p>Have a project or opportunity in mind? I'd love to connect!</p>
+        </div>
 
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="section">
-
-        <h2 class="section-title">
-            Contact Me
-        </h2>
-
-        <div class="contact-container">
-
-
-            <div class="contact-info">
-
-                <h3>Let's Connect</h3>
-
-                <p>
-                    Feel free to contact me for opportunities,
-                    collaborations or project discussions.
-                </p>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-envelope"></i>
-
-                    <span>
-                        sujithaserman@gmail.com
-                    </span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-phone"></i>
-
-                    <span>
-                        +91 8438696652
-                    </span>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <i class="fas fa-location-dot"></i>
-
-                    <span>
-                        Tamil Nadu, India
-                    </span>
-
-                </div>
-
+        <div class="contact-layout">
+            <div class="contact-details">
+                <p>✉ &nbsp; sujithaserman@gmail.com</p>
+                <p>⌖ &nbsp; Tamil Nadu, India</p>
+                <p>⌘ &nbsp; Open to learning and collaboration</p>
             </div>
 
+            <form id="contactForm">
+                <div class="input-row">
+                    <input id="visitorName" type="text"
+                        placeholder="Your Name" required>
+                    <input id="visitorEmail" type="email"
+                        placeholder="Your Email" required>
+                </div>
 
-            <form class="contact-form"
-                  onsubmit="sendMessage(event)">
+                <textarea id="visitorMessage" rows="5"
+                    placeholder="Your Message" required></textarea>
 
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
-
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
-
-                <input
-                    type="text"
-                    placeholder="Subject"
-                    required>
-
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    required></textarea>
-
-                <button type="submit">
-                    Send Message
+                <button type="submit" class="btn primary">
+                    Send Message →
                 </button>
 
+                <p id="formStatus" aria-live="polite"></p>
             </form>
-
         </div>
-
     </section>
 
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-social">
-
-            <a href="https://github.com/" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://linkedin.com/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="mailto:yourmail@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-
-        </div>
-
-        <p>
-            © 2026Sujithaserman. All Rights Reserved.
-        </p>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="logo">✿ My<span>Portfolio</span></a>
+        <p>© 2026 Sujitha. All Rights Reserved.</p>
+        <p>Made with ♥ and creativity.</p>
     </footer>
 
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
